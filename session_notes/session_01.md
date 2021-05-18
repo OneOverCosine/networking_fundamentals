@@ -40,10 +40,41 @@ With this method of communication, the send will send a packet and reciver sends
 To start a session, we have something called a *3-way handshake*. It works as follows:  
 ![3-way handshake](../resources/three_way_handshake_00.png)  
 1. The sender sends a SYN message to the device it's trying to communicate with
-2. Reciver sends a SYN-ACK message back to the sender
+2. Reciever sends a SYN-ACK message back to the sender
 3. Now the sender sends an ACK message and the connection between the two has been set up
 
 Now they can communicate.  
-Note that the sender always sends and the reciver always recives. If the device that is currently reciving needs to start sending, a new session must be set up.  
+Note that the sender always sends and the reciever always recieves. If the device that is currently recieving needs to start sending, a new session must be set up.  
 
 **Closing Connections**  
+To close a connection, a FIN message is sent from the send to the reciever. The reciever responds with a FIN-ACK and the connection is closed
+
+### Connectionless
+This is where the sender sends without regard for whether the reciever actually gets the message.  
+
+**User Datagram Protocol** (UDP) is a connectionless protocol. 
+
+## Session
+info
+
+## Presentation
+info
+
+## Application
+info
+
+## Transmission Control Protocol/Internet Protocol (TCP/IP) Model
+| Layer | Info |
+| --- | --- |
+| Application | info |
+| Transport | info |
+| Internet | info |
+| Network Access | info |
+
+## Addressing Systems
+| Address System | Bit no | Info |
+| --- | --- | --- |
+| IPv4 | 32 bits | Logical address |
+| IPv6 | 128 bits | Logical address |
+| MAC | 48 bits | Physical address |
+
